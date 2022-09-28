@@ -9,3 +9,6 @@ mvn clean
 
 printf "mvn install ....."
 mvn install
+
+printf "mvn quarkus ....."
+mvn compile quarkus:dev
