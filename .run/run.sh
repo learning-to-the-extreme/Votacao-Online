@@ -10,5 +10,13 @@ mvn clean
 printf "mvn install ....."
 mvn install
 
-printf "mvn quarkus ....."
-mvn compile quarkus:dev
+printf "navegando para pasta do front end"
+cd src-web
+
+printf "Instalando dependencias do front end"
+npm install
+npm uninstall react-router-dom
+npm install react-router-dom@5.2.0
+
+printf "Iniciando build do front end"
+npm start
